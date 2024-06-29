@@ -285,6 +285,20 @@ section {
   margin-bottom: 0;
 }
 
+@media (max-width: 600px) {
+  #header .logo {
+    max-width: 300px;
+  }
+ 
+ #header h2 {
+  font-size: 20px;
+}
+
+.btn-primary, .btn-secondary {
+  padding: 11px 22px;
+  font-size: 16px;
+}
+}
 /* Video container */
 .video-container {
   position: relative;
