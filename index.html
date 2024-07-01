@@ -7,6 +7,7 @@
   <title>Log&Steam</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -40,9 +41,15 @@
       <!-- ======= Header ======= -->
       <header id="header" class="d-flex align-items-center">
         <div class="container d-flex flex-column align-items-center text-center">
-          <img src="assets/img/logo.png" alt="Logncoding Logo" class="logo img-fluid">
-          <h2 class="mx-4 mx-md-0">Personalized Coding Education, Tailored to Your Story</h2>
-          <div class="d-flex justify-content-center mt-4">
+          <img src="assets/img/logo.png" alt="Logncoding Logo" class="logo img-fluid"data-aos="fade-in"
+     data-aos-duration="2000"  data-aos-delay="1500">
+          <h2 class="mx-4 mx-md-0" data-aos="fade-in"
+     data-aos-duration="2000" data-aos-delay="2500"><span class="">7월 18일</span> 로그엔스팀 오픈 설명회 </h2>
+          <h2 class="mx-4 mx-md-0" data-aos="fade-in"
+     data-aos-duration="2000" data-aos-delay="2500">8월 1일 학원 오픈 예정 </h2>
+
+          <div class="d-flex justify-content-center mt-4" data-aos="fade-in"
+     data-aos-duration="1000" data-aos-delay="2500">
             <a href="#about" class="btn btn-primary btn-lg me-2">상담 신청</a>
             <a href="#contact" class="btn btn-secondary btn-lg ms-2">설명회 신청</a>
           </div>
@@ -54,8 +61,9 @@
         <!-- ======= About Us Section ======= -->
         <section id="about" class="about d-flex align-items-center">
           <div class="container d-flex justify-content-center">
-            <div class="video-container">
-              <video controls class="embed-responsive-item">
+            <div class="video-container" data-aos="fade-in"
+     data-aos-duration="2000" data-aos-delay="1500">
+              <video controls class="embed-responsive-item" >
                 <source src="assets/videos/your-video-file.mp4" type="video/mp4">
                 Your browser does not support the video tag.
               </video>
@@ -83,12 +91,13 @@
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-  <!-- Vendor JS Files (CDN) -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
-
-  <!-- Template Main JS File -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   <script src="assets/js/main.js"></script>
 
 </body>
