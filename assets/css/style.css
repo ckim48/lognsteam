@@ -188,9 +188,9 @@ h6 {
 
 #header h2 {
   color: #eee;
-  margin-bottom: 10px;
-  margin-top: 5px;
-  font-size: 20px;
+  margin-bottom: 5px;
+  margin-top: 2px;
+  font-size: 18px;
   font-weight: 700;
 }
 
@@ -200,7 +200,7 @@ h6 {
   border-radius: 50px;
   width: 140px;
 
-  font-size: 18px;
+  font-size: 17px;
   transition: all 0.3s ease;
 }
 
@@ -314,7 +314,7 @@ section {
 .video-container {
   position: relative;
   width: 100%;
-  max-width: 800px;
+  max-width: 900px;
   border: 5px solid rgba(254,187,57,255);
   border-radius: 15px;
   overflow: hidden;
