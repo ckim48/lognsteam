@@ -71,13 +71,13 @@
           <div class="container d-flex justify-content-center">
             <div class="video-container" data-aos="fade-up"
      data-aos-duration="2000" data-aos-delay="1500">
-            <video controls autoplay muted class="embed-responsive-item">
+            <video id ="delayedVideo" controls muted class="embed-responsive-item">
               <source src="assets/video.mp4" type="video/mp4">
               Your browser does not support the video tag.
             </video>
-              <div class="play-button-overlay">
+<!--               <div class="play-button-overlay">
                 <i class="bi bi-play-circle"></i>
-              </div>
+              </div> -->
             </div>
           </div>
         </section><!-- End About Us Section -->
@@ -105,6 +105,13 @@
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init();
+  </script>
+    <script>
+    window.addEventListener('load', function() {
+      setTimeout(function() {
+        document.getElementById('delayedVideo').play();
+      }, 3900); 
+    });
   </script>
   <script src="assets/js/main.js"></script>
 
