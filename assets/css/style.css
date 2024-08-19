@@ -27,12 +27,12 @@
 /*--------------------------------------------------------------
 # Curtain Animation
 --------------------------------------------------------------*/
-.curtain-wrapper {
+/*.curtain-wrapper {
   position: relative;
   overflow: hidden;
   width: 100%;
-  height: auto; /* Change to auto to allow content to define the height */
-  min-height: 100vh; /* Ensure it covers the initial viewport */
+  height: auto; 
+  min-height: 100vh; 
 }
 
 .curtain {
@@ -81,7 +81,7 @@
   100% {
     opacity: 1;
   }
-}
+}*/
 
 /*--------------------------------------------------------------
 # General
@@ -192,7 +192,7 @@ h6 {
   color: #eee;
   margin-bottom: 5px;
   margin-top: 2px;
-  font-size: 20.8px;
+  font-size: 23px;
   font-weight: 300;
 }
 
@@ -371,6 +371,7 @@ section {
   color: #fff;
   font-size: 14px;
   position: relative;
+  z-index: 999;
 }
 
 #footer .copyright {
