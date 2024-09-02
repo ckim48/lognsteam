@@ -27,6 +27,10 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 <style>
+  .address{
+    color:black;
+    font-size: 14px;
+  }
   @media (min-width: 768px) {
     #kakao-talk-channel-chat-button {
     position: fixed;
@@ -642,7 +646,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <script>
 document.addEventListener("DOMContentLoaded", function() {
   const languageBtn = document.getElementById('language-btn');
-  let currentLanguage = 'en'; // Default language is English
+  let currentLanguage = 'en'; 
 
   const switchLanguage = () => {
     const elements = document.querySelectorAll('[data-en][data-ko]');
@@ -655,7 +659,6 @@ document.addEventListener("DOMContentLoaded", function() {
       }
     });
 
-    // Toggle the current language and button text
     if (currentLanguage === 'en') {
       currentLanguage = 'ko';
       languageBtn.textContent = 'English';
@@ -665,12 +668,13 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   };
 
+
   languageBtn.addEventListener('click', switchLanguage);
 
-  // Optionally, set a default language here
-  switchLanguage(); // Initialize the default language to English
+
 });
 </script>
+
 <script>
   var map = new naver.maps.Map('naver-map', {
       center: new naver.maps.LatLng(37.52789515741631, 127.03627568550415), 
@@ -689,7 +693,7 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 
   var infoWindow = new naver.maps.InfoWindow({
-      content: '<div style="width:150px;text-align:center;padding:10px; background-color:white; border:1px solid black;">로그앤스팀</div>'
+      content: '<div style="width:150px;text-align:center;padding:10px; background-color:white; border:1px solid black;"><p>로그앤스팀</p> <p class="address">서울 강남구 언주로174길 30</p> </div>'
   });
 
   naver.maps.Event.addListener(marker, "click", function(e) {
