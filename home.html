@@ -671,23 +671,36 @@ document.addEventListener("DOMContentLoaded", function() {
   switchLanguage(); // Initialize the default language to English
 });
 
-
-</script>
 <script type="text/javascript">
   var map = new naver.maps.Map('naver-map', {
       center: new naver.maps.LatLng(37.52789515741631, 127.03627568550415), 
       zoom: 18,
-            minZoom: 8, 
-            zoomControl: true, 
-            zoomControlOptions: {
-                position: naver.maps.Position.TOP_RIGHT
-        }});
+      minZoom: 8, 
+      zoomControl: true, 
+      zoomControlOptions: {
+          position: naver.maps.Position.TOP_RIGHT
+      }
+  });
 
   var marker = new naver.maps.Marker({
       position: new naver.maps.LatLng(37.52789515741631, 127.03627568550415),
-      map: map
+      map: map,
+      title: '서울 강남구 언주로174길 30' 
+  });
+
+  var infoWindow = new naver.maps.InfoWindow({
+      content: '<div style="width:150px;text-align:center;padding:10px;">로그앤스팀</div>'
+  });
+
+  naver.maps.Event.addListener(marker, "click", function(e) {
+      if (infoWindow.getMap()) {
+          infoWindow.close();
+      } else {
+          infoWindow.open(map, marker);
+      }
   });
 </script>
+
 </body>
 
 </html>
