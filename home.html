@@ -689,15 +689,7 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 
   var infoWindow = new naver.maps.InfoWindow({
-      content: '<div style="width:150px;text-align:center;padding:10px;">로그앤스팀</div>',
-                  maxWidth: 200,
-            height: 50,
-            backgroundColor: "white",
-            borderColor: "black",
-            borderWidth: 2,
-            disableAnchor: true,
-            textAlign: "center",
-            margin: "auto",
+      content: '<div style="width:150px;text-align:center;padding:10px; background-color:white; border:1px solid black;">로그앤스팀</div>'
   });
 
   naver.maps.Event.addListener(marker, "click", function(e) {
@@ -708,8 +700,9 @@ document.addEventListener("DOMContentLoaded", function() {
       }
   });
 
-  infowindow.open(map, marker);
+  infoWindow.open(map, marker);
 </script>
+
 
 </body>
 
