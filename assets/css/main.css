@@ -988,6 +988,27 @@ section,
   width: 100%;
   z-index: 2;
 }
+
+#partner .image-stack {
+  display: grid;
+  position: relative;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+#partner .image-stack .stack-back {
+  grid-column: 4/-1;
+  grid-row: 1;
+  width: 100%;
+  z-index: 1;
+}
+
+#partner .image-stack .stack-front {
+  grid-row: 1;
+  grid-column: 1/span 8;
+  margin-top: 20%;
+  width: 100%;
+  z-index: 2;
+}
 /*--------------------------------------------------------------
 # Call To Action Section
 --------------------------------------------------------------*/
