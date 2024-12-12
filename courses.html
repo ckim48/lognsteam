@@ -198,6 +198,99 @@
   .logo-img{
     width: 80%;
   }
+.table-bordered {
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 100%;
+    margin: 20px 0;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.table-bordered th {
+      display: table-cell; /* Ensures proper alignment */
+    vertical-align: middle; /* Centers text vertically */
+    font-family: 'Montserrat', sans-serif; /* Modern font family */
+    font-size: 16px; /* Adjust font size */
+    line-height: 1.5; /* Improve readability */
+    text-align: center; /* Centers text horizontally */
+
+    background: linear-gradient(135deg, #f39c12, #ff7f1e);
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 15px;
+    text-align: center;
+}
+
+.table-bordered td {
+      display: table-cell; /* Ensures proper alignment */
+    vertical-align: middle; /* Centers text vertically */
+    font-family: 'Montserrat', sans-serif; /* Modern font family */
+    font-size: 14px !important; /* Adjust font size */
+    line-height: 1.5; /* Improve readability */
+    text-align: center; /* Centers text horizontally */
+
+    padding: 12px 15px;
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+    background-color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.table-bordered tr:nth-child(even) td {
+    background-color: #f9f9f9;
+}
+
+/*.table-bordered tr:hover td {
+    background-color: #ffeedd;
+}*/
+
+.table-bordered td p {
+    margin: 0;
+    padding: 5px 0;
+    font-size: 14px;
+}
+
+.table-bordered tbody tr {
+    border-bottom: 1px solid #ddd;
+}
+
+.table-bordered tbody tr:last-child {
+    border-bottom: none;
+}
+
+
+  .courses-img{
+    display: none;
+  }
+.textb {
+    display: inline-block;
+    padding: 15px 25px;
+    background: linear-gradient(135deg, #ff7f1e, #f39c12);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 25px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-transform: uppercase;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.textb:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+@media (max-width: 1100px) {
+  .courses-img{
+    display: block;
+  }
+}
 </style>
 
 </head>
@@ -234,10 +327,135 @@
             <div class="section-title mt-6" data-aos="fade-up" style="margin-top:90px;">
         <h2>Courses</h2>
       </div>     
+      <div class="courses-img">
        <img class="img-fluid" data-aos="zoom-out" src="assets/img/courses/winter1.jpeg"style="max-width: 50%; margin-top:2px; margin-left: auto; margin-right: auto; display: block">
       <img class="img-fluid" data-aos="zoom-out" src="assets/img/courses/winter2.jpeg"style="max-width: 50%; margin-top:20px; margin-left: auto; margin-right: auto; display: block">
       <img class="img-fluid" data-aos="zoom-out" src="assets/img/courses/winter3.jpeg"style="max-width: 50%; margin-top:20px; margin-left: auto; margin-right: auto; display: block">
       <img class="img-fluid" data-aos="zoom-out" src="assets/img/courses/winter4.jpeg"style="max-width: 50%; margin-top:20px; margin-left: auto; margin-right: auto; display: block">
+      </div>
+
+      <div class="textb text-center" >
+주 3회 수업</div>
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th data-en="Class Schedule" data-ko="수업 일정">Class Schedule</th>
+      <th data-en="Subject Name" data-ko="과목 명">Subject Name</th>
+      <th data-en="Day" data-ko="요일">Day</th>
+      <th data-en="Time" data-ko="시간">Time</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="3" data-en="WEEK 1 (12/16 - 12/22)" data-ko="WEEK 1 (12/16 - 12/22)">WEEK 1 (12/16 - 12/22)</td>
+      <td rowspan="3" data-en="VEX IQ Prep [Robotics Short Course]" data-ko="VEX IQ Prep [로보틱스 단기 특강]">VEX IQ Prep [Robotics Short Course]</td>
+      <td data-en="Mon." data-ko="월">Mon.</td>
+      <td>3-5pm or 5-7pm</td>
+    </tr>
+    <tr>
+      <td data-en="Wed." data-ko="수">Wednesday</td>
+      <td>10am-12pm or 1-3pm</td>
+    </tr>
+    <tr>
+      <td data-en="Sat." data-ko="토">Sat.</td>
+      <td>3-5pm</td>
+    </tr>
+
+    <tr>
+      <td rowspan="3" data-en="WEEK 2 (12/23 - 12/29)" data-ko="WEEK 2 (12/23 - 12/29)">WEEK 2 (12/23 - 12/29)</td>
+      <td rowspan="3" data-en="DIY Project [Makers Short Course]" data-ko="DIY Project [메이커스 단기 특강]">DIY Project [Makers Short Course]</td>
+      <td data-en="Mon." data-ko="월">Mon.</td>
+      <td>3-5pm or 5-7pm</td>
+    </tr>
+    <tr>
+      <td data-en="Tues." data-ko="화">Tues.</td>
+      <td>3-5pm or 5-7pm</td>
+    </tr>
+    <tr>
+      <td data-en="Sat." data-ko="토">Sat.</td>
+      <td>3-5pm</td>
+    </tr>
+
+    <tr>
+      <td rowspan="3" data-en="WEEK 3 (12/30 - 1/5)" data-ko="WEEK 3 (12/30 - 1/5)">WEEK 3 (12/30 - 1/5)</td>
+      <td rowspan="3" data-en="VEX IQ Prep [Robotics Short Course]" data-ko="VEX IQ Prep [로보틱스 단기 특강]">VEX IQ Prep [Robotics Short Course]</td>
+      <td data-en="Mon." data-ko="월">Mon.</td>
+      <td>3-5pm or 5-7pm</td>
+    </tr>
+    <tr>
+      <td data-en="Tues." data-ko="화">Tues.</td>
+      <td>3-5pm</td>
+    </tr>
+    <tr>
+      <td data-en="Sat." data-ko="토">Sat.</td>
+      <td>3-5pm</td>
+    </tr>
+  </tbody>
+</table>
+
+      <div class="textb text-center">
+Olympiad 준비반</div>
+
+
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th data-en="Class Schedule" data-ko="수업 일정">Class Schedule</th>
+      <th data-en="Subject Name" data-ko="과목 명">Subject Name</th>
+      <th data-en="Day" data-ko="요일">Day</th>
+      <th data-en="Time" data-ko="시간">Time</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="3" data-en="12/16 - 1/5" data-ko="12/16 - 1/5">12/16 - 1/5</td>
+      <td rowspan="3" data-en="Genius Olympiad [G7-G12]" data-ko="Genius Olympiad [중1-고3]">Genius Olympiad [G7-G12]</td>
+      <td data-en="Mon." data-ko="월">Mon.</td>
+      <td>7-9pm</td>
+    </tr>
+    <tr>
+      <td data-en="Thurs." data-ko="목">Thurs.</td>
+      <td>10am-12pm or 3-5pm</td>
+    </tr>
+    <tr>
+      <td data-en="Sat." data-ko="토">Sat.</td>
+      <td>1-3pm</td>
+    </tr>
+  </tbody>
+</table>
+
+      <div class="textb text-center">
+Special Class</div>
+
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th data-en="Class Schedule" data-ko="수업 일정">Class Schedule</th>
+      <th data-en="Subject Name" data-ko="과목 명">Subject Name</th>
+      <th data-en="Day" data-ko="요일">Day</th>
+      <th data-en="Time" data-ko="시간">Time</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="3" data-en="12/16 - 1/5" data-ko="12/16 - 1/5">12/16 - 1/5</td>
+      <td rowspan="3" data-en="VEX One Point Lesson" data-ko="VEX 원 포인트 레슨">VEX One Point Lesson</td>
+      <td data-en="Mon." data-ko="월">Mon.</td>
+      <td>5-7pm</td>
+    </tr>
+    <tr>
+      <td data-en="Thurs." data-ko="목">Thurs.</td>
+      <td>5-7pm</td>
+    </tr>
+    <tr>
+      <td data-en="Fri." data-ko="금">Fri.</td>
+      <td>5-7pm</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
     </div>
  
   </main>
@@ -371,35 +589,32 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 </script>
 <script>
-document.addEventListener("DOMContentLoaded", function() {
-  const languageBtn = document.getElementById('language-btn');
-  let currentLanguage = 'en'; 
+document.addEventListener("DOMContentLoaded", function () {
+  const languageBtn = document.getElementById("language-btn");
+  let currentLanguage = "en";
 
   const switchLanguage = () => {
-    const elements = document.querySelectorAll('[data-en][data-ko]');
-
-    elements.forEach(element => {
-      if (currentLanguage === 'en') {
-        element.textContent = element.getAttribute('data-ko');
+    const elements = document.querySelectorAll("[data-en][data-ko]");
+    elements.forEach((element) => {
+      if (currentLanguage === "en") {
+        element.textContent = element.getAttribute("data-ko");
       } else {
-        element.textContent = element.getAttribute('data-en');
+        element.textContent = element.getAttribute("data-en");
       }
     });
 
-    if (currentLanguage === 'en') {
-      currentLanguage = 'ko';
-      languageBtn.textContent = 'English';
+    if (currentLanguage === "en") {
+      currentLanguage = "ko";
+      languageBtn.textContent = "English";
     } else {
-      currentLanguage = 'en';
-      languageBtn.textContent = 'Korean';
+      currentLanguage = "en";
+      languageBtn.textContent = "Korean";
     }
   };
 
-
-  languageBtn.addEventListener('click', switchLanguage);
-
-
+  languageBtn.addEventListener("click", switchLanguage);
 });
+
 </script>
 
 <script>
